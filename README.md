@@ -4,9 +4,6 @@ nyoba soal logic dari chatGPT
 pakai bahasa JavaScript
 
 ```
-// Online Javascript Editor for free
-// Write, Edit and Run your Javascript code using JS Online Compiler
-
 const toUpperString = (str) => {
     console.log("Masukan Huruf")
     console.log(str.toUpperCase())
