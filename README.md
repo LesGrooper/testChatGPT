@@ -433,4 +433,41 @@ const descEven = (arr) => {
 console.log(descEven([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
 
+const isPalindrome = (str) => {
+    for(let i = 0; i < str.length/2; i++){
+        if(str[i] != str[str.length-1-i]) return false;
+    }
+    return true;
+}
+
+console.log(isPalindrome("kasur ini rusak"));
+console.log(isPalindrome("makan nasi goreng"));
+
+
+// menerima array angka dan mengembalikan nilai rata-rata dan selisih setiap angkanya dengan angka sebelumnya.
+// jawaban aing
+// const sumArray = (arr) => {
+//     let temp = 0;
+//     for(let i = 0; i < arr.length; i++){
+//          const diff = Math.abs(arr[i+1] - arr[i])
+//          temp += diff
+//     }
+//     return temp/(arr.length-1)
+// }
+
+// console.log(sumArray([10, 20, 30, 50, 80]))
+
+//jawaban chat gpt
+const getAverageDifference = (arr) => {
+  let totalDifference = 0;
+  for (let i = 0; i < arr.length - 1; i++) {
+    const difference = Math.abs(arr[i] - arr[i + 1]);
+    totalDifference += difference;
+  }
+  return totalDifference / (arr.length - 1);
+};
+
+console.log(getAverageDifference([10, 20, 30, 50, 80])); //
+
+
 ```
